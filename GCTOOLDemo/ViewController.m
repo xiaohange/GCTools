@@ -17,9 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // 不一一测试
-    // wifi
-    BOOL isWifi = [GCTool IsEnableWIFI];
-    isWifi ? NSLog(@"wifi"):NSLog(@"noWifi");
+
 }
 
 - (void)didReceiveMemoryWarning {

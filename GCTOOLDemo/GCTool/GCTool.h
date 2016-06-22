@@ -51,13 +51,6 @@
 +(BOOL)isOneDay:(NSInteger)t1 t2:(NSInteger)t2;
 
 /**
- *  检测是否WIFI
- *
- *  @return BOOL值
- */
-+ (BOOL)IsEnableWIFI;
-
-/**
  *  图片写入SDWEBIMAGE路径
  *
  *  @param url   图片url
