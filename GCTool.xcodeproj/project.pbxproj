@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		115F44E11D1A447C007322FB /* GCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 115F44DE1D1A447C007322FB /* GCTool.m */; };
-		115F44E21D1A447C007322FB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 115F44E01D1A447C007322FB /* Reachability.m */; };
+		115F44E81D1A5E55007322FB /* GCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 115F44E51D1A5E55007322FB /* GCTool.m */; };
+		115F44E91D1A5E55007322FB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 115F44E71D1A5E55007322FB /* Reachability.m */; };
 		11F7635C1D191780007877DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7635B1D191780007877DE /* main.m */; };
 		11F7635F1D191780007877DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7635E1D191780007877DE /* AppDelegate.m */; };
 		11F763621D191780007877DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F763611D191780007877DE /* ViewController.m */; };
@@ -17,9 +17,7 @@
 		11F7636A1D191780007877DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F763681D191780007877DE /* LaunchScreen.storyboard */; };
 		11F763751D191780007877DE /* GCToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F763741D191780007877DE /* GCToolTests.m */; };
 		11F763801D191780007877DE /* GCToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7637F1D191780007877DE /* GCToolUITests.m */; };
-		11F763901D1917AD007877DE /* GCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7638F1D1917AD007877DE /* GCTool.m */; };
 		11F763931D1927FF007877DE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F763921D1927FF007877DE /* SystemConfiguration.framework */; };
-		11F763961D19296E007877DE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F763951D19296E007877DE /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		115F44DD1D1A447C007322FB /* GCTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTool.h; sourceTree = "<group>"; };
-		115F44DE1D1A447C007322FB /* GCTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTool.m; sourceTree = "<group>"; };
-		115F44DF1D1A447C007322FB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		115F44E01D1A447C007322FB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		115F44E41D1A5E55007322FB /* GCTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTool.h; sourceTree = "<group>"; };
+		115F44E51D1A5E55007322FB /* GCTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTool.m; sourceTree = "<group>"; };
+		115F44E61D1A5E55007322FB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		115F44E71D1A5E55007322FB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		11F763571D191780007877DE /* GCTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F7635B1D191780007877DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11F7635D1D191780007877DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,11 +58,7 @@
 		11F7637B1D191780007877DE /* GCToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F7637F1D191780007877DE /* GCToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCToolUITests.m; sourceTree = "<group>"; };
 		11F763811D191780007877DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11F7638E1D1917AD007877DE /* GCTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTool.h; sourceTree = "<group>"; };
-		11F7638F1D1917AD007877DE /* GCTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTool.m; sourceTree = "<group>"; };
 		11F763921D1927FF007877DE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		11F763941D19296E007877DE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		11F763951D19296E007877DE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,13 +87,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		115F44DC1D1A447C007322FB /* GCTool */ = {
+		115F44E31D1A5E55007322FB /* GCTool */ = {
 			isa = PBXGroup;
 			children = (
-				115F44DD1D1A447C007322FB /* GCTool.h */,
-				115F44DE1D1A447C007322FB /* GCTool.m */,
-				115F44DF1D1A447C007322FB /* Reachability.h */,
-				115F44E01D1A447C007322FB /* Reachability.m */,
+				115F44E41D1A5E55007322FB /* GCTool.h */,
+				115F44E51D1A5E55007322FB /* GCTool.m */,
+				115F44E61D1A5E55007322FB /* Reachability.h */,
+				115F44E71D1A5E55007322FB /* Reachability.m */,
 			);
 			path = GCTool;
 			sourceTree = "<group>";
@@ -128,8 +122,7 @@
 		11F763591D191780007877DE /* GCTool */ = {
 			isa = PBXGroup;
 			children = (
-				115F44DC1D1A447C007322FB /* GCTool */,
-				11F7638D1D19179A007877DE /* GCTool */,
+				115F44E31D1A5E55007322FB /* GCTool */,
 				11F7635D1D191780007877DE /* AppDelegate.h */,
 				11F7635E1D191780007877DE /* AppDelegate.m */,
 				11F763601D191780007877DE /* ViewController.h */,
@@ -167,17 +160,6 @@
 				11F763811D191780007877DE /* Info.plist */,
 			);
 			path = GCToolUITests;
-			sourceTree = "<group>";
-		};
-		11F7638D1D19179A007877DE /* GCTool */ = {
-			isa = PBXGroup;
-			children = (
-				11F7638E1D1917AD007877DE /* GCTool.h */,
-				11F7638F1D1917AD007877DE /* GCTool.m */,
-				11F763941D19296E007877DE /* Reachability.h */,
-				11F763951D19296E007877DE /* Reachability.m */,
-			);
-			path = GCTool;
 			sourceTree = "<group>";
 		};
 		11F763911D1927BC007877DE /* Frameworks */ = {
@@ -321,10 +303,8 @@
 				11F763621D191780007877DE /* ViewController.m in Sources */,
 				11F7635F1D191780007877DE /* AppDelegate.m in Sources */,
 				11F7635C1D191780007877DE /* main.m in Sources */,
-				115F44E21D1A447C007322FB /* Reachability.m in Sources */,
-				11F763901D1917AD007877DE /* GCTool.m in Sources */,
-				11F763961D19296E007877DE /* Reachability.m in Sources */,
-				115F44E11D1A447C007322FB /* GCTool.m in Sources */,
+				115F44E81D1A5E55007322FB /* GCTool.m in Sources */,
+				115F44E91D1A5E55007322FB /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
