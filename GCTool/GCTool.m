@@ -7,7 +7,6 @@
 //
 
 #import "GCTool.h"
-#import "Reachability.h"
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
 
@@ -177,11 +176,6 @@
     } else {
         return @"刚刚";
     }
-}
-
-+ (BOOL)IsEnableWIFI
-{
-    return ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] != NotReachable);
 }
 
 ///Users/tianjing/Library/Application Support/iPhone Simulator/7.0.3/Applications/22B94F39-16BE-4E24-B24E-18AB7522F55F/Library/Caches/gongchang.com.SalesManager/fsCachedData
