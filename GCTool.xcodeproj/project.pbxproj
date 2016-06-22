@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		115F44E81D1A5E55007322FB /* GCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 115F44E51D1A5E55007322FB /* GCTool.m */; };
-		115F44E91D1A5E55007322FB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 115F44E71D1A5E55007322FB /* Reachability.m */; };
+		115F44EF1D1A61AD007322FB /* GCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 115F44EC1D1A61AD007322FB /* GCTool.m */; };
+		115F44F01D1A61AD007322FB /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 115F44EE1D1A61AD007322FB /* Reachability.m */; };
 		11F7635C1D191780007877DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7635B1D191780007877DE /* main.m */; };
 		11F7635F1D191780007877DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7635E1D191780007877DE /* AppDelegate.m */; };
 		11F763621D191780007877DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F763611D191780007877DE /* ViewController.m */; };
@@ -38,10 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		115F44E41D1A5E55007322FB /* GCTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTool.h; sourceTree = "<group>"; };
-		115F44E51D1A5E55007322FB /* GCTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTool.m; sourceTree = "<group>"; };
-		115F44E61D1A5E55007322FB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		115F44E71D1A5E55007322FB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		115F44EB1D1A61AD007322FB /* GCTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTool.h; sourceTree = "<group>"; };
+		115F44EC1D1A61AD007322FB /* GCTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTool.m; sourceTree = "<group>"; };
+		115F44ED1D1A61AD007322FB /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		115F44EE1D1A61AD007322FB /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		11F763571D191780007877DE /* GCTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F7635B1D191780007877DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11F7635D1D191780007877DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,15 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		115F44E31D1A5E55007322FB /* GCTool */ = {
+		115F44EA1D1A61AD007322FB /* GCTOOL */ = {
 			isa = PBXGroup;
 			children = (
-				115F44E41D1A5E55007322FB /* GCTool.h */,
-				115F44E51D1A5E55007322FB /* GCTool.m */,
-				115F44E61D1A5E55007322FB /* Reachability.h */,
-				115F44E71D1A5E55007322FB /* Reachability.m */,
+				115F44EB1D1A61AD007322FB /* GCTool.h */,
+				115F44EC1D1A61AD007322FB /* GCTool.m */,
+				115F44ED1D1A61AD007322FB /* Reachability.h */,
+				115F44EE1D1A61AD007322FB /* Reachability.m */,
 			);
-			path = GCTool;
+			path = GCTOOL;
 			sourceTree = "<group>";
 		};
 		11F7634E1D191780007877DE = {
@@ -122,7 +122,7 @@
 		11F763591D191780007877DE /* GCTool */ = {
 			isa = PBXGroup;
 			children = (
-				115F44E31D1A5E55007322FB /* GCTool */,
+				115F44EA1D1A61AD007322FB /* GCTOOL */,
 				11F7635D1D191780007877DE /* AppDelegate.h */,
 				11F7635E1D191780007877DE /* AppDelegate.m */,
 				11F763601D191780007877DE /* ViewController.h */,
@@ -303,8 +303,8 @@
 				11F763621D191780007877DE /* ViewController.m in Sources */,
 				11F7635F1D191780007877DE /* AppDelegate.m in Sources */,
 				11F7635C1D191780007877DE /* main.m in Sources */,
-				115F44E81D1A5E55007322FB /* GCTool.m in Sources */,
-				115F44E91D1A5E55007322FB /* Reachability.m in Sources */,
+				115F44EF1D1A61AD007322FB /* GCTool.m in Sources */,
+				115F44F01D1A61AD007322FB /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
