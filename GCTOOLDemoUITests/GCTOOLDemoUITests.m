@@ -1,18 +1,18 @@
 //
-//  GCToolUITests.m
-//  GCToolUITests
+//  GCTOOLDemoUITests.m
+//  GCTOOLDemoUITests
 //
-//  Created by HanJunQiang on 16/6/21.
+//  Created by HanJunQiang on 16/6/22.
 //  Copyright © 2016年 HaRi. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface GCToolUITests : XCTestCase
+@interface GCTOOLDemoUITests : XCTestCase
 
 @end
 
-@implementation GCToolUITests
+@implementation GCTOOLDemoUITests
 
 - (void)setUp {
     [super setUp];
