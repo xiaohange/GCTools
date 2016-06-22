@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
     s.source       = { :git => "https://github.com/XiaoHanGe/GCTools.git", :tag => s.version.to_s }
     s.source_files  = "GCTools/**/*.{h,m}"
     s.public_header_files = "GCTools/**/*.h"
-    s.framework  = "AddressBookUI", "AddressBook", "CommonCrypto"
+    s.framework  = "AddressBookUI","AddressBook","CommonCrypto"
     s.requires_arc = true
 end
