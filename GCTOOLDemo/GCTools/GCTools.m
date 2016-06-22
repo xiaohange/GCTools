@@ -6,11 +6,11 @@
 //  Copyright © 2016年 HaRi. All rights reserved.
 //
 
-#import "GCTool.h"
+#import "GCTools.h"
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
 
-@implementation GCTool
+@implementation GCTools
 
 +(NSString*)convertUnixTime:(NSInteger )unixTime timeType:(int)type
 {
@@ -82,13 +82,13 @@
     NSString *reaultStr;
     
     if(timeGap <= 0) {
-        reaultStr= show?[GCTool convertUnixTime:unixTime timeType:0]:@"今天";
+        reaultStr= show?[GCTools convertUnixTime:unixTime timeType:0]:@"今天";
     }else if (timeGap >0 && timeGap<=24*3600) {
-        reaultStr = !isHis?[NSString stringWithFormat:@"昨天"]:show?[NSString stringWithFormat:@"昨天 %@",[GCTool convertUnixTime:unixTime timeType:0]]:[NSString stringWithFormat:@"昨天"];
+        reaultStr = !isHis?[NSString stringWithFormat:@"昨天"]:show?[NSString stringWithFormat:@"昨天 %@",[GCTools convertUnixTime:unixTime timeType:0]]:[NSString stringWithFormat:@"昨天"];
     }else if (timeGap>24*3600 && timeGap<=2*24*3600) {
-        reaultStr = !isHis?[NSString stringWithFormat:@"前天"]:show?[NSString stringWithFormat:@"前天 %@",[GCTool convertUnixTime:unixTime timeType:0]]:[NSString stringWithFormat:@"前天"];
+        reaultStr = !isHis?[NSString stringWithFormat:@"前天"]:show?[NSString stringWithFormat:@"前天 %@",[GCTools convertUnixTime:unixTime timeType:0]]:[NSString stringWithFormat:@"前天"];
     }else{
-        reaultStr = !isHis?[GCTool convertUnixTime:unixTime timeType:3]:show?[self convertUnixTime:unixTime timeType:5]:[self convertUnixTime:unixTime timeType:7];
+        reaultStr = !isHis?[GCTools convertUnixTime:unixTime timeType:3]:show?[self convertUnixTime:unixTime timeType:5]:[self convertUnixTime:unixTime timeType:7];
     }
     return reaultStr;
     
@@ -166,7 +166,7 @@
     NSInteger difference = nowTimestamp - timestamp;
     
     if (difference >= year) {
-        return [GCTool convertUnixTime:timestamp timeType:1];
+        return [GCTools convertUnixTime:timestamp timeType:1];
     } else if (difference >= day) {
         return [NSString stringWithFormat:@"%ld天前",difference/day];
     } else if (difference >= hour) {
@@ -197,7 +197,7 @@
 +(void)saveImageByUrl:(NSString* )url image:(NSData* )image
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [image writeToFile:[GCTool convertCCMD5Path:url] atomically:YES ];
+        [image writeToFile:[GCTools convertCCMD5Path:url] atomically:YES ];
     });
 }
 

@@ -16,7 +16,7 @@
 		115F452D1D1A64FE007322FB /* GCTOOLDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 115F452C1D1A64FE007322FB /* GCTOOLDemoTests.m */; };
 		115F45381D1A64FF007322FB /* GCTOOLDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 115F45371D1A64FF007322FB /* GCTOOLDemoUITests.m */; };
 		115F454E1D1A65B4007322FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115F454D1D1A65B4007322FB /* SystemConfiguration.framework */; };
-		115F45521D1A6E8B007322FB /* GCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 115F45511D1A6E8B007322FB /* GCTool.m */; };
+		115F45551D1A6F73007322FB /* GCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 115F45541D1A6F73007322FB /* GCTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		115F45371D1A64FF007322FB /* GCTOOLDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCTOOLDemoUITests.m; sourceTree = "<group>"; };
 		115F45391D1A64FF007322FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		115F454D1D1A65B4007322FB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		115F45501D1A6E8B007322FB /* GCTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTool.h; sourceTree = "<group>"; };
-		115F45511D1A6E8B007322FB /* GCTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTool.m; sourceTree = "<group>"; };
+		115F45531D1A6F73007322FB /* GCTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTools.h; sourceTree = "<group>"; };
+		115F45541D1A6F73007322FB /* GCTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,8 +159,8 @@
 		115F454F1D1A6E8B007322FB /* GCTools */ = {
 			isa = PBXGroup;
 			children = (
-				115F45501D1A6E8B007322FB /* GCTool.h */,
-				115F45511D1A6E8B007322FB /* GCTool.m */,
+				115F45531D1A6F73007322FB /* GCTools.h */,
+				115F45541D1A6F73007322FB /* GCTools.m */,
 			);
 			path = GCTools;
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 				115F451A1D1A64FE007322FB /* ViewController.m in Sources */,
 				115F45171D1A64FE007322FB /* AppDelegate.m in Sources */,
 				115F45141D1A64FE007322FB /* main.m in Sources */,
-				115F45521D1A6E8B007322FB /* GCTool.m in Sources */,
+				115F45551D1A6F73007322FB /* GCTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

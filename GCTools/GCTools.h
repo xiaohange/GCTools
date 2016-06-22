@@ -10,7 +10,7 @@
 #import <CommonCrypto/CommonDigest.h>
 #import <MessageUI/MessageUI.h>
 
-@interface GCTool : NSObject
+@interface GCTools : NSObject
 /**
  *  通过pic的url获得转变后的文件路径，和sdwebimage里面存的路径一致
  *
