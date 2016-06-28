@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "GCTools/GCTools.h"
+#import "GCTools.h"
 @interface ViewController ()
 
 @end
