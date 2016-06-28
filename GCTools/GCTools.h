@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CommonCrypto/CommonDigest.h>
-#import <MessageUI/MessageUI.h>
 
 @interface GCTools : NSObject
 /**
@@ -44,7 +42,6 @@
  *  @return 返回不同时间段的字符串
  */
 +(NSString *)ttimeUptoNowFrom:(NSInteger)timestamp;
-+(NSDate *)dateStartOfWeek:(NSDate *)date;//获取当前星期的第一天的时间戳
 +(NSInteger)getDateInteger:(NSDate *)date;
 +(NSString* )getDateString:(NSDate *)date;//获取时间戳
 +(NSDate* )getStartOfMonth:(NSDate *)date;//获取当月第一天
@@ -90,27 +87,7 @@
 
 +(NSString* )coverDicToStr:(id)dic;
 
-/**
- *  UIAlertView - 简单提示框（无代理）
- *
- *  @param title          title
- *  @param msg            msg
- *  @param cancleBtnTitle cancleBtnTitle
- *  @param otherBtnTitle  otherBtnTitle
- */
-+(void)alertView:(NSString* )title msg:(NSString* )msg cancleBtn:(NSString *)cancleBtnTitle otherBtnTitle:(NSString *)otherBtnTitle;
-
 +(NSArray* )getArray:(id)array;
-
-/**
- *  添加联系方式到通讯录
- *
- *  @param name        联系人姓名
- *  @param phoneNumber 联系人电话
- *
- *  @return 是否添加成功
- */
-+ (BOOL)addContactName:(NSString *)name WithPhoneNumber:(NSString *)phoneNumber;
 
 /**
  *  获取文本高度

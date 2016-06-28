@@ -16,6 +16,8 @@
 		115F452D1D1A64FE007322FB /* GCTOOLDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 115F452C1D1A64FE007322FB /* GCTOOLDemoTests.m */; };
 		115F45381D1A64FF007322FB /* GCTOOLDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 115F45371D1A64FF007322FB /* GCTOOLDemoUITests.m */; };
 		1163627C1D228DA900506CDB /* GCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1163627B1D228DA900506CDB /* GCTools.m */; };
+		1163627E1D2292AD00506CDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1163627D1D2292AD00506CDB /* UIKit.framework */; };
+		116362801D2292BC00506CDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1163627F1D2292BC00506CDB /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		115F45391D1A64FF007322FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1163627A1D228DA900506CDB /* GCTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTools.h; sourceTree = "<group>"; };
 		1163627B1D228DA900506CDB /* GCTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTools.m; sourceTree = "<group>"; };
+		1163627D1D2292AD00506CDB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1163627F1D2292BC00506CDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				116362801D2292BC00506CDB /* Foundation.framework in Frameworks */,
+				1163627E1D2292AD00506CDB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +90,8 @@
 		115F45061D1A64FE007322FB = {
 			isa = PBXGroup;
 			children = (
+				1163627F1D2292BC00506CDB /* Foundation.framework */,
+				1163627D1D2292AD00506CDB /* UIKit.framework */,
 				116362791D228DA900506CDB /* GCTools */,
 				115F45111D1A64FE007322FB /* GCTOOLDemo */,
 				115F452B1D1A64FE007322FB /* GCTOOLDemoTests */,
@@ -432,6 +440,10 @@
 				INFOPLIST_FILE = GCTOOLDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "------------.GCTOOLDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -444,6 +456,10 @@
 				INFOPLIST_FILE = GCTOOLDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "------------.GCTOOLDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

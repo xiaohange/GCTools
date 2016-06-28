@@ -7,9 +7,9 @@
 //
 
 #import "GCTools.h"
-#import <AddressBook/AddressBook.h>
-#import <AddressBookUI/AddressBookUI.h>
-
+#import <CommonCrypto/CommonDigest.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 @implementation GCTools
 
 +(NSString*)convertUnixTime:(NSInteger )unixTime timeType:(int)type
@@ -94,29 +94,8 @@
     
 }
 
-+(NSDate *)dateStartOfWeek:(NSDate *)date
-{
-    NSCalendar *gregorian = [[NSCalendar alloc]
-                             initWithCalendarIdentifier:NSGregorianCalendar] ;
-    [gregorian setFirstWeekday:2]; //monday is first day
-    
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSWeekdayCalendarUnit fromDate:date];
-    
-    NSDateComponents *componentsToSubtract = [[NSDateComponents alloc] init];
-    [componentsToSubtract setDay: - ((([components weekday] - [gregorian firstWeekday])
-                                      + 7 ) % 7)];
-    NSDate *beginningOfWeek = [gregorian dateByAddingComponents:componentsToSubtract toDate:date options:0];
-    
-    NSDateComponents *componentsStripped = [gregorian components: (NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit)
-                                                        fromDate: beginningOfWeek];
-    //gestript
-    beginningOfWeek = [gregorian dateFromComponents: componentsStripped];
-    
-    return beginningOfWeek;
-}
-
 +(NSString* )getDateString:(NSDate *)date{
-    NSString* dateString = [NSString stringWithFormat:@"%ld",[self getDateInteger:date]];
+    NSString* dateString = [NSString stringWithFormat:@"%ld",(long)[self getDateInteger:date]];
     return  dateString;
 }
 
@@ -168,11 +147,11 @@
     if (difference >= year) {
         return [GCTools convertUnixTime:timestamp timeType:1];
     } else if (difference >= day) {
-        return [NSString stringWithFormat:@"%ld天前",difference/day];
+        return [NSString stringWithFormat:@"%ld天前",(long)difference/day];
     } else if (difference >= hour) {
-        return [NSString stringWithFormat:@"%ld小时前",difference/hour];
+        return [NSString stringWithFormat:@"%ld小时前",(long)difference/hour];
     } else if (difference >= minute*5) {
-        return [NSString stringWithFormat:@"%ld分钟前",difference/minute];
+        return [NSString stringWithFormat:@"%ld分钟前",(long)difference/minute];
     } else {
         return @"刚刚";
     }
@@ -261,11 +240,6 @@
     }
 }
 
-+(void)alertView:(NSString* )title msg:(NSString* )msg cancleBtn:(NSString *)cancleBtnTitle otherBtnTitle:(NSString *)otherBtnTitle
-{
-    [[[UIAlertView alloc]initWithTitle:title message:msg delegate:nil cancelButtonTitle:cancleBtnTitle otherButtonTitles:otherBtnTitle, nil]show];
-}
-
 +(UIImage *)getImageWithColor:(UIColor *)color
 {
     CGRect rect = CGRectMake(0, 0, 1, 1);
@@ -286,48 +260,6 @@
         return array;
     }else
         return nil;
-}
-
-+ (BOOL)addContactName:(NSString *)name WithPhoneNumber:(NSString *)phoneNumber
-{
-    
-    ABAddressBookRef addressBook = nil;
-    
-    addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
-    
-    ABRecordRef record = ABPersonCreate();
-    
-    CFErrorRef error;
-    
-    ABRecordSetValue(record, kABPersonFirstNameProperty, (__bridge CFTypeRef)name, &error);
-    ABMutableMultiValueRef multi = ABMultiValueCreateMutable(kABPersonPhoneProperty);
-    
-    ABMultiValueAddValueAndLabel(multi, (__bridge CFTypeRef)phoneNumber, (__bridge CFTypeRef)@"", NULL);
-    
-    ABRecordSetValue(record, kABPersonPhoneProperty, multi, &error);
-    if (multi) {
-        CFRelease(multi);
-    }
-    ABAddressBookAddRecord(addressBook, record, &error);
-    
-    if (ABAddressBookHasUnsavedChanges(addressBook)){
-        BOOL couldSaveAddressBook = NO;
-        CFErrorRef couldSaveAddressBookError = NULL;
-        couldSaveAddressBook = ABAddressBookSave(addressBook, &couldSaveAddressBookError);
-        if (couldSaveAddressBook){
-            NSLog(@"Successfully added the person to the group.");
-            
-            return YES;
-        } else {
-            NSLog(@"Failed to save the address book.");
-            
-            return NO;
-        }
-    }else{
-        NSLog(@"Failed to save the address book.");
-        
-        return NO;
-    }
 }
 
 + (CGFloat)getText:(NSString *)text MinHeightWithBoundsWidth:(CGFloat)width fontSize:(CGFloat)fontSize
