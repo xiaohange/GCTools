@@ -42,10 +42,9 @@
 [![CocoaPods](https://github.com/XiaoHanGe/GCTools/blob/master/1.gif?raw=true)](http://cocoapods.org/pods/JQSafeKit)
 
 ###GCKeyChain
-- 一个存储UUID工具类
+#####一个存储UUID工具类 keyChain _用来存储UUID，即使删除APP也会保留很不错的🔑储存
 
-- `+ (void)keyChainSave:(NSString *)service;//
-  keyChain _用来存储UUID，即使删除APP也会保留很不错的🔑储存`
+- `+ (void)keyChainSave:(NSString *)service;`
 - `+ (NSString *)keyChainLoad;`
 - `+ (void)keyChainDelete;`
 
