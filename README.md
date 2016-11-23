@@ -30,7 +30,7 @@
 ####GCProgressView：  
 - 一个动态进度条
 
-###文档：
+####文档：
 - `_progressLine1.trackTintColor = [UIColor colorWithRed:0 green:120/255.f blue:1 alpha:1];`
 - `//设置背景颜色
     _progressLine1.backgroundColor = [UIColor colorWithRed:216/255.f green:216/255.f blue:216/255.f alpha:1];`
@@ -38,13 +38,17 @@
 - `_progressLine1.progressValue = 30;    //设置当前值_progressLine1.progressMaxValue = 100; //设置最大值`
 - `_progressLine1.progressValue = 30;    //设置当前值`
 
-###效果如下：
-[![CocoaPods](https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3520411343,3450541381&fm=58)](http://cocoapods.org/pods/JQSafeKit)
+####效果如下：
+[![CocoaPods](https://github.com/XiaoHanGe/GCTools/blob/master/1.gif?raw=true)](http://cocoapods.org/pods/JQSafeKit)
 
-    
-    
-    
-   
+###GCKeyChain
+- 一个存储UUID工具类
+
+- `+ (void)keyChainSave:(NSString *)service;//
+  keyChain _用来存储UUID，即使删除APP也会保留很不错的🔑储存`
+- `+ (NSString *)keyChainLoad;`
+- `+ (void)keyChainDelete;`
+
 ##How To Use
 ####请看Demo
 
