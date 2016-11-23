@@ -4,6 +4,7 @@
 //
 //  Created by HanJunQiang on 16/6/21.
 //  Copyright © 2016年 HaRi. All rights reserved.
+//  博主：http://blog.csdn.net/qq_31810357
 //
 
 #import <UIKit/UIKit.h>

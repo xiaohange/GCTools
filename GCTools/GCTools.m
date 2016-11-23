@@ -4,6 +4,7 @@
 //
 //  Created by HanJunQiang on 16/6/21.
 //  Copyright © 2016年 HaRi. All rights reserved.
+//  博主：http://blog.csdn.net/qq_31810357
 //
 
 #import "GCTools.h"
@@ -16,53 +17,16 @@
 {
     NSDateFormatter* YMD = [[NSDateFormatter alloc]init];
     switch (type) {
-        case 0:
-        {
-            [YMD setDateFormat:@"HH:mm"];
-        }
-            break;
-        case 1:
-        {
-            [YMD setDateFormat:@"yyyy-MM-dd HH:mm"];
-        }
-            break;
-        case 2:
-        {
-            [YMD setDateFormat:@"yyyy-MM-dd  HH:mm:ss"];
-        }
-            break;
-        case 3:
-        {
-            [YMD setDateFormat:@"yy/MM/dd"];
-        }
-            break;
-        case 4:
-        {
-            [YMD setDateFormat:@"MM月dd日"];
-        }
-            break;
-        case 5:
-        {
-            [YMD setDateFormat:@"yyyy年MM月dd日 HH:mm"];
-        }
-            break;
-        case 6:
-        {
-            [YMD setDateFormat:@"MM月dd日 HH:mm"];
-        }
-            break;
-        case 7:
-        {
-            [YMD setDateFormat:@"yyyy年MM月dd日"];
-        }
-            break;
-        case 8:
-        {
-            [YMD setDateFormat:@"yyyyMMddHHmmss"];
-        }
-            break;
-        default:
-            break;
+        case 0:{[YMD setDateFormat:@"HH:mm"];}               break;
+        case 1:{[YMD setDateFormat:@"yyyy-MM-dd HH:mm"];}    break;
+        case 2:{[YMD setDateFormat:@"yyyy-MM-dd  HH:mm:ss"];}break;
+        case 3:{[YMD setDateFormat:@"yy/MM/dd"];}            break;
+        case 4:{[YMD setDateFormat:@"MM月dd日"];}             break;
+        case 5:{[YMD setDateFormat:@"yyyy年MM月dd日 HH:mm"];} break;
+        case 6:{[YMD setDateFormat:@"MM月dd日 HH:mm"];}       break;
+        case 7:{[YMD setDateFormat:@"yyyy年MM月dd日"];}       break;
+        case 8:{[YMD setDateFormat:@"yyyyMMddHHmmss"];}      break;
+        default:break;
     }
     NSDate* confromPostTime = [NSDate dateWithTimeIntervalSince1970:unixTime];
     
@@ -91,7 +55,6 @@
         reaultStr = !isHis?[GCTools convertUnixTime:unixTime timeType:3]:show?[self convertUnixTime:unixTime timeType:5]:[self convertUnixTime:unixTime timeType:7];
     }
     return reaultStr;
-    
 }
 
 +(NSString* )getDateString:(NSDate *)date{
@@ -187,10 +150,7 @@
     CC_MD5(str, (int)strlen(str), r);
     NSString *filename = [NSString stringWithFormat:@"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
                           r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9], r[10], r[11], r[12], r[13], r[14], r[15]];
-    
     return filename;
-    
-    
 }
 
 +(void)callNumber:(NSString* )phoneNumber
@@ -270,7 +230,6 @@
         textHeight = [text boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading |NSStringDrawingTruncatesLastVisibleLine attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:fontSize]} context:nil].size.height+1;
         
         return textHeight;
-        
     }
     @catch (NSException *exception) {
         
@@ -388,6 +347,5 @@
     }
     
 }
-
 
 @end

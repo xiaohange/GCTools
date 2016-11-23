@@ -18,6 +18,9 @@
 		1163627C1D228DA900506CDB /* GCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1163627B1D228DA900506CDB /* GCTools.m */; };
 		1163627E1D2292AD00506CDB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1163627D1D2292AD00506CDB /* UIKit.framework */; };
 		116362801D2292BC00506CDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1163627F1D2292BC00506CDB /* Foundation.framework */; };
+		47B248BD1DE57E4600148D59 /* GCProgressLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B248BC1DE57E4600148D59 /* GCProgressLine.m */; };
+		47B248C01DE57F5F00148D59 /* progressLineDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B248BF1DE57F5F00148D59 /* progressLineDemo.m */; };
+		47B248C31DE580F000148D59 /* GCKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B248C21DE580F000148D59 /* GCKeyChain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,12 @@
 		1163627B1D228DA900506CDB /* GCTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTools.m; sourceTree = "<group>"; };
 		1163627D1D2292AD00506CDB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1163627F1D2292BC00506CDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		47B248BB1DE57E4600148D59 /* GCProgressLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCProgressLine.h; sourceTree = "<group>"; };
+		47B248BC1DE57E4600148D59 /* GCProgressLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCProgressLine.m; sourceTree = "<group>"; };
+		47B248BE1DE57F5F00148D59 /* progressLineDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = progressLineDemo.h; sourceTree = "<group>"; };
+		47B248BF1DE57F5F00148D59 /* progressLineDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = progressLineDemo.m; sourceTree = "<group>"; };
+		47B248C11DE580F000148D59 /* GCKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCKeyChain.h; sourceTree = "<group>"; };
+		47B248C21DE580F000148D59 /* GCKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCKeyChain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,8 @@
 				115F45161D1A64FE007322FB /* AppDelegate.m */,
 				115F45181D1A64FE007322FB /* ViewController.h */,
 				115F45191D1A64FE007322FB /* ViewController.m */,
+				47B248BE1DE57F5F00148D59 /* progressLineDemo.h */,
+				47B248BF1DE57F5F00148D59 /* progressLineDemo.m */,
 				115F451B1D1A64FE007322FB /* Main.storyboard */,
 				115F451E1D1A64FE007322FB /* Assets.xcassets */,
 				115F45201D1A64FE007322FB /* LaunchScreen.storyboard */,
@@ -157,6 +168,10 @@
 			children = (
 				1163627A1D228DA900506CDB /* GCTools.h */,
 				1163627B1D228DA900506CDB /* GCTools.m */,
+				47B248C11DE580F000148D59 /* GCKeyChain.h */,
+				47B248C21DE580F000148D59 /* GCKeyChain.m */,
+				47B248BB1DE57E4600148D59 /* GCProgressLine.h */,
+				47B248BC1DE57E4600148D59 /* GCProgressLine.m */,
 			);
 			path = GCTools;
 			sourceTree = "<group>";
@@ -228,6 +243,7 @@
 				TargetAttributes = {
 					115F450E1D1A64FE007322FB = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WTB2BKP7UZ;
 					};
 					115F45271D1A64FE007322FB = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -293,8 +309,11 @@
 			files = (
 				115F451A1D1A64FE007322FB /* ViewController.m in Sources */,
 				115F45171D1A64FE007322FB /* AppDelegate.m in Sources */,
+				47B248BD1DE57E4600148D59 /* GCProgressLine.m in Sources */,
+				47B248C01DE57F5F00148D59 /* progressLineDemo.m in Sources */,
 				115F45141D1A64FE007322FB /* main.m in Sources */,
 				1163627C1D228DA900506CDB /* GCTools.m in Sources */,
+				47B248C31DE580F000148D59 /* GCKeyChain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WTB2BKP7UZ;
 				INFOPLIST_FILE = GCTOOLDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -444,7 +464,7 @@
 					"$(SRCROOT)",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "------------.GCTOOLDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gc.GCTOOLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -453,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WTB2BKP7UZ;
 				INFOPLIST_FILE = GCTOOLDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -460,7 +481,7 @@
 					"$(SRCROOT)",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "------------.GCTOOLDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gc.GCTOOLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

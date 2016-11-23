@@ -1,11 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HIS-Bb-lWL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--GCToolsDemo-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -14,13 +18,108 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zrz-Bg-BDf">
+                                <rect key="frame" x="59" y="145" width="257" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="hHm-H9-EFn"/>
+                                </constraints>
+                                <state key="normal" title="progressLine"/>
+                                <connections>
+                                    <segue destination="HgG-iM-5sP" kind="show" id="TVh-mb-Ijd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Zrz-Bg-BDf" secondAttribute="trailing" constant="59" id="E6q-Y9-r7y"/>
+                            <constraint firstItem="Zrz-Bg-BDf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="59" id="Ff3-VP-EqA"/>
+                            <constraint firstItem="Zrz-Bg-BDf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="81" id="IbZ-gI-mEK"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="GCToolsDemo" id="MsD-67-oLd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1025" y="139"/>
+        </scene>
+        <!--Progress Line Demo-->
+        <scene sceneID="MUD-DS-uvm">
+            <objects>
+                <viewController id="HgG-iM-5sP" customClass="progressLineDemo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gdg-we-FDg"/>
+                        <viewControllerLayoutGuide type="bottom" id="65Q-rd-ai0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yol-t0-0LY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4L-hs-V65" customClass="GCProgressLine">
+                                <rect key="frame" x="20" y="104" width="335" height="6"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="6" id="Cjf-4c-4Ew"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXw-Z3-bc6" customClass="GCProgressLine">
+                                <rect key="frame" x="20" y="150" width="335" height="10"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="AmS-yu-LKx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbx-zL-Ztm" customClass="GCProgressLine">
+                                <rect key="frame" x="20" y="200" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yNp-LU-Y40"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="N4L-hs-V65" firstAttribute="top" secondItem="gdg-we-FDg" secondAttribute="bottom" constant="40" id="2nh-Rh-azm"/>
+                            <constraint firstAttribute="trailing" secondItem="bbx-zL-Ztm" secondAttribute="trailing" constant="20" id="EYj-i2-kFW"/>
+                            <constraint firstItem="SXw-Z3-bc6" firstAttribute="top" secondItem="N4L-hs-V65" secondAttribute="bottom" constant="40" id="IsL-Mv-EOg"/>
+                            <constraint firstAttribute="trailing" secondItem="SXw-Z3-bc6" secondAttribute="trailing" constant="20" id="Ll4-3Z-3fh"/>
+                            <constraint firstItem="bbx-zL-Ztm" firstAttribute="top" secondItem="SXw-Z3-bc6" secondAttribute="bottom" constant="40" id="Xhb-CB-frc"/>
+                            <constraint firstItem="SXw-Z3-bc6" firstAttribute="leading" secondItem="yol-t0-0LY" secondAttribute="leading" constant="20" id="Z0N-ZF-rjj"/>
+                            <constraint firstItem="N4L-hs-V65" firstAttribute="leading" secondItem="yol-t0-0LY" secondAttribute="leading" constant="20" id="ZRA-Ha-3AH"/>
+                            <constraint firstItem="bbx-zL-Ztm" firstAttribute="leading" secondItem="yol-t0-0LY" secondAttribute="leading" constant="20" id="dzC-mk-TFu"/>
+                            <constraint firstAttribute="trailing" secondItem="N4L-hs-V65" secondAttribute="trailing" constant="20" id="x3V-do-gKT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="48Q-QQ-4qY"/>
+                    <connections>
+                        <outlet property="progressLine1" destination="N4L-hs-V65" id="FMK-H0-Oj9"/>
+                        <outlet property="progressLine2" destination="SXw-Z3-bc6" id="opf-OZ-l5E"/>
+                        <outlet property="progressLine3" destination="bbx-zL-Ztm" id="rOc-Lc-5QI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yKM-fd-UMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1756" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zPu-aY-NeP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HIS-Bb-lWL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M29-Ge-z4d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FKE-fG-EBx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hp5-Bq-Kz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="265" y="139"/>
         </scene>
     </scenes>
 </document>

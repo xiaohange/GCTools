@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "GCTools.h"
+#import "GCKeyChain.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // 不一一测试
+    
+    
+    // test 记得用真机测试 GCKeyChain.h
+    if (![GCKeyChain keyChainLoad]) {
+        [GCKeyChain keyChainSave:[[NSUUID UUID]UUIDString]];
+        NSLog(@"keyChain save success");
+    }else {
+        NSLog(@"Load_UUID: %@",[GCKeyChain keyChainLoad]);
+    }
+    
 
 }
 
